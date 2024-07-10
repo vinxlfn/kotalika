@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "kotalika_backend": {
+      "main": "src/kotalika_backend/main.mo",
+      "type": "motoko"
+    },
+    "kotalika_frontend": {
+      "dependencies": [
+        "kotalika_backend"
+      ],
+      "source": [
+        "src/kotalika_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "kotalika_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
